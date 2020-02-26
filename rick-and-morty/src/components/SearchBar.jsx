@@ -3,14 +3,14 @@ import React from "react";
 const SearchBar = props => {
   return (
     <>
-      <form>
+      <form onSubmit={props.handleSubmit}>
         <label></label>
         <input
           type="text"
           placeholder="Search characters..."
           onInput={props.handleInput}
         ></input>
-        <button onSubmit={props.handleSubmit}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </>
   );
